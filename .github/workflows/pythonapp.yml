@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "prasad231" --password-stdin
-        docker image build -t prasad231/pyflask:latest .
-        docker push prasad231/pyflask:latest
+        docker image build -t prasad231/nodejs2:latest .
+        docker push prasad231/nodejs2:latest
